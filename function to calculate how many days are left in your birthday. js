@@ -1,0 +1,25 @@
+<!-- Write a JavaScript that uses function to calculate how many days are left in
+your birthday. -->
+
+<html>
+  <head>
+    <script>
+      function daysdifference(date1, date2) {
+        one_day = 24 * 60 * 60 * 1000;
+        date1_ms = date1.getTime();
+        date2_ms = date2.getTime();
+        difference_ms = Math.abs(date1_ms - date2_ms);
+        return Math.round(difference_ms / one_day);
+      }
+    </script>
+  </head>
+  <body>
+    <script>
+      var d1 = new Date();
+      d1.setDate(9);
+      d1.setMonth(0);
+      var d2 = new Date();
+      document.write("<br/>No of days left :" + daysdifference(d1, d2));
+    </script>
+  </body>
+</html>
