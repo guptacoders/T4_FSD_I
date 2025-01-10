@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <script>
+      function fun(id) {
+        id.innerHTML = "mouse moved";
+
+        id.style.zIndex = 1;
+      }
+
+      function fun2(id) {
+        id.innerHTML = "mouse out";
+
+        id.style.zIndex = 1;
+      }
+    </script>
+  </head>
+
+  <body>
+    <div
+      style="
+        width: 200px;
+        height: 200px;
+        background-image: url('skull.jpeg');
+        filter: blur(2px);
+        z-index: -1;
+        color: blue;
+        position: absolute;
+      "
+    ></div>
+    <div
+      onmouseover="fun(this)"
+      onmouseout="fun2(this)"
+      style="
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgba(7, 255, 243, 0.993);
+        font-size: 2rem;
+        position: absolute;
+      "
+    >
+      hjg
+    </div>
+  </body>
+</html>

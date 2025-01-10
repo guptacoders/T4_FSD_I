@@ -1,0 +1,35 @@
+<!-- Write JS to handle following mouse events first if mouse is overheading it should turn yellow 
+if mouse goes out than it shuld turn black 
+if button named "findtime" is clicked than show date and time information
+if button named "red" is clicked than Bg color should turn Red and button named "green" is clicked than Bg color should turn Green and-->
+<html>
+  <head>
+    <script type="text/javascript">
+      function fun(id) {
+        id.style.color = "yellow";
+      }
+      function fun2(id) {
+        id.style.color = "black";
+      }
+      function fun3(id) {
+        d = new Date();
+        document.getElementById("demo").innerHTML = d;
+      }
+      function fun4() {
+        id = document.getElementById("bd");
+        id.bgColor = "red";
+      }
+      function fun5() {
+        id = document.getElementById("bd");
+        id.bgColor = "green";
+      }
+    </script>
+  </head>
+  <body id="bd">
+    <h1 onmouseover="fun(this)" onmouseout="fun2(this)">Hello</h1>
+    <input type="submit" value="Find Time" onclick="fun3(this)" />
+    <p id="demo"></p>
+    <input type="submit" value="red" onclick="fun4()" />
+    <input type="submit" value="green" onclick="fun5()" />
+  </body>
+</html>

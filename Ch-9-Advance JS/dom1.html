@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script>
+      function cls() {
+        cl = document.getElementsByTagName("p");
+        for (i = 0; i < cl.length; i++) {
+          cl[i].innerHTML = "changed text";
+          cl[i].style.color = "blue";
+          cl[i].style.backgroundColor = "red";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <p>P1 tag</p>
+    <p>P2 tag</p>
+    <p>P3 tag</p>
+
+    <input type="button" onclick="cls()" value="click here" />
+  </body>
+</html>

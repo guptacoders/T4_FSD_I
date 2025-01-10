@@ -1,0 +1,21 @@
+<!-- When clicked the Text will be UpperCase -->
+
+<html>
+  <head>
+    <script>
+      function cls() {
+        cl = document.getElementsByClassName("abc");
+        for (i = 0; i < cl.length; i++) {
+          cl[i].style.textTransform = "UpperCase";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <p class="abc">Paragraph</p>
+    <pre class="abc">PreTag</pre>
+    <h1 class="abc">Heading</h1>
+    <input type="button" onclick="cls()" value="click here" />
+  </body>
+</html>

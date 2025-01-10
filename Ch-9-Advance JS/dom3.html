@@ -1,0 +1,23 @@
+<!-- Change Text to uppercased and lowercase when clicked -->
+
+<html>
+  <head>
+    <script>
+      function cls() {
+        cl = document.getElementById("mk");
+        cl.style.textTransform = "uppercase";
+      }
+
+      function cld() {
+        cd = document.getElementById("mk");
+        cd.style.textTransform = "lowercase";
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1 id="mk">Happy Makar Sankranti</h1>
+    <input type="button" onclick="cls()" value="Upper" />
+    <input type="button" onclick="cld()" value="Lower" />
+  </body>
+</html>
